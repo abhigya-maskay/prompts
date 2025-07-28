@@ -7,4 +7,3 @@ This plan outlines the iterative process for implementing components using a Tes
 - [Step 3: Implement the Function](./3-implement-function.md)
 - [Step 4: Refactor the Code](./4-refactor-code.md)
 - [Step 5: Complete the Component](./5-complete-component.md)
-- [Step 6: Integration and System Testing](./6-integration-testing.md)
