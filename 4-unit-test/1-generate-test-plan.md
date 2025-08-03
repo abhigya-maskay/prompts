@@ -1,19 +1,22 @@
-## Phase 1: Test Plan Generation
+## Step 1: Generate Test Plan
 
-1. **Target Code Analysis:** Copilot analyzes the specified code file to understand its structure, functions, classes, and dependencies.
+1. **Analyze Target File:** Copilot reads the target source code file completely to identify all functions, methods, classes, dependencies, and business logic flows.
 
-2. **Test Strategy Development:** 
-   * Copilot identifies all testable units (functions, methods, classes)
-   * Maps out test scenarios including happy paths, edge cases, error conditions, and boundary values
-   * Determines mock requirements and test data needs
-   * Focus on unit tests
+2. **Identify Test Cases:**
+   * **Happy Path Tests:** Test each function with valid inputs and verify expected outputs
+   * **Edge Cases:** Test boundary values, empty inputs, invalid data types, and malformed inputs
+   * **Error Scenarios:** Test network failures, database errors, permission issues, and timeout scenarios
+   * **Integration Points:** Test component interactions, data flow, callbacks, and event handling
 
-3. **Test Plan Creation:** Copilot generates a comprehensive test plan document that includes:
-   * List of all tests to be written
-   * Test descriptions with expected inputs and outputs
-   * Priority order for implementation
-   * Required test setup and dependencies
+3. **Plan Test Data Strategy:**
+   * Check for existing factory files in `test/`, `spec/`, or `__tests__/` directories
+   * Plan minimal valid objects, edge case data sets, and invalid data scenarios
+   * Use existing factory methods when available
 
-4. **User Checkpoint:** The user reviews the test plan markdown file, suggests modifications, and provides approval before proceeding to implementation.
+4. **Determine Mock Strategy:**
+   * Identify external dependencies that need mocking (APIs, databases, file I/O, third-party services)
+   * Plan mocks for internal dependencies not under test
 
-5. **Plan Finalization:** Once approved, the test plan becomes the roadmap for the iterative implementation process.
+5. **Create Test Plan Document:** Generate a comprehensive markdown file documenting all test cases, data requirements, and mock strategies.
+
+6. **User Checkpoint:** Present the test plan to the user for review and confirmation before proceeding to implementation.
