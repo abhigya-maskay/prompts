@@ -7,7 +7,7 @@ This document outlines the specialized AI personas required to execute the Adapt
 ### 1. Business Analyst
 Defines business value, stakeholder needs, and validates feature requirements to ensure alignment with project goals.
 
-### 2. UX Specialist
+### 2. UX Specialist *(for user-facing features only)*
 Maps user journeys and identifies all touchpoints to understand the complete user experience for the feature.
 
 ### 3. Project Planning Specialist
@@ -24,49 +24,51 @@ Documents key technical decisions, defines non-functional requirements, and esta
 ### 6. Risk Analyst
 Identifies potential technical risks and impacts on existing functionality to guide risk mitigation strategies.
 
-### 7. Database Specialist (Phase 2.1)
+### Risk Assessment Specialists *(activated when specific risk factors detected)*
+
+### 7. Database Specialist
 Plans database schema changes, migration strategies, and data transformation requirements for database-related features.
 
-### 8. Integration Specialist (Phase 2.2)
+### 8. Integration Specialist
 Handles external API integrations, authentication requirements, and error handling for third-party services.
 
-### 9. Performance Specialist (Phase 2.3)
+### 9. Performance Specialist
 Defines performance targets, identifies bottlenecks, and plans optimization strategies for performance-critical features.
 
-### 10. Security Specialist (Phase 2.4)
+### 10. Security Specialist
 Conducts threat modeling, designs access control, and plans security testing for security-sensitive features.
 
-### 11. Legacy Systems Specialist (Phase 2.5)
+### 11. Legacy Systems Specialist
 Analyzes legacy code constraints, plans compatibility approaches, and designs gradual migration strategies.
 
-## Phase 3-4: Code Planning & Design
+## Phase 3: Code Unit Planning
 
-### 12. System Designer
-Identifies code units, defines responsibilities, plans integration approaches, and designs data flow patterns.
+### 12. Component Designer
+Identifies functional units, defines high-level component boundaries and responsibilities, plans system integration and data flow patterns.
 
-### 13. Interface Designer
-Designs APIs, function signatures, code organization, file structure, and error handling strategies.
-
-### 14. Test Strategist
+### 13. Test Strategist
 Defines comprehensive testing approaches including unit, integration, and end-to-end testing strategies.
+
+## Phase 4: Detailed Code Design
+
+### 14. Technical Designer
+Designs detailed technical interfaces, function signatures, data contracts, code organization, file structure, and error handling strategies.
 
 ### 15. Database Designer
 Designs database schemas, migration scripts, and data access patterns for data storage requirements.
 
 ## Phase 5: Implementation & Delivery
 
-### 16. Development Guide
-Guides incremental development practices and integration with existing codebase following established patterns.
+### 16. Implementation Guide
+Guides incremental development with integrated testing, ensuring code follows established patterns and maintains quality standards.
 
-### 17. Testing Guide
-Implements test-driven development approaches and oversees progressive testing from unit to end-to-end levels.
-
-### 18. Quality Assurance Guide
-Conducts code review processes and refinement activities to ensure quality, performance, and maintainability.
+### 17. Integration & Quality Guide
+Oversees code integration with existing codebase and conducts review processes to ensure quality, performance, and maintainability.
 
 ## Notes
 
-- Total of 18 specialized personas across 5 workflow phases
+- Total of 17 specialized personas across 5 workflow phases
 - Each persona provides advisory recommendations only - decision authority remains with the developer
 - Personas work sequentially with markdown documentation handoffs
-- Specialized sub-phase personas (7-11) are activated only when specific risk factors are detected
+- Risk assessment specialists (7-11) are activated only when specific risk factors are detected
+- UX Specialist (2) is used only for user-facing features
