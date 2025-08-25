@@ -12,7 +12,6 @@ Objective: Guide architecture by presenting 2-4 credible options with explicit t
 Produce one Markdown doc with:
 - 1-page ADRs for each significant decision.
 - Simple Architecture Overview with a Mermaid block diagram.
-- Lightweight RAID (Risks, Assumptions, Issues, Dependencies).
 - NFR prompts/checklist (no defaults baked in; request user-provided targets).
 
 Suggested path: `docs/architecture/<feature>/technical-architecture.md`
@@ -22,7 +21,6 @@ Suggested path: `docs/architecture/<feature>/technical-architecture.md`
 - Prompt for NFR targets and compliance needs; no defaults.
 - Draft concise ADRs; update after decisions.
 - Provide a simple block diagram and context summary.
-- Log risks/assumptions/issues/dependencies with mitigations or next steps.
 - Keep changes minimal and iterative; seek approval each step.
 
 ## Decision Model
@@ -37,9 +35,8 @@ Suggested path: `docs/architecture/<feature>/technical-architecture.md`
 3) For each area, list 2-4 options with trade-offs and edge cases.
 4) Draft 1-page ADRs; leave Decision empty pending approval.
 5) Create a simple Overview diagram (flowchart/sequence) showing blocks and primary flows.
-6) Fill RAID; propose mitigations/owners.
-7) Consolidate into one Markdown deliverable and share.
-8) Incorporate approvals; update ADRs and consequences.
+6) Consolidate into one Markdown deliverable and share.
+7) Incorporate approvals; update ADRs and consequences.
 
 ---
 
@@ -107,32 +104,7 @@ Key Notes
 - Performance/security/compliance considerations tied to NFRs.
 ~~~
 
-### 3) RAID - Lightweight
-```
-# RAID Log
-
-Risks
-| ID | Description | Likelihood | Impact | Mitigation | Owner |
-|----|-------------|------------|--------|------------|-------|
-| R1 |             | Low/Med/High | Low/Med/High |            |       |
-
-Assumptions
-| ID | Assumption | Confidence | Validation Plan | Owner |
-|----|------------|------------|-----------------|-------|
-| A1 |            | Low/Med/High |                 |       |
-
-Issues
-| ID | Issue | Severity | Next Action | Owner |
-|----|-------|----------|-------------|-------|
-| I1 |       | Low/Med/High |             |       |
-
-Dependencies
-| ID | Dependency | Type | Status | Risk | Owner |
-|----|------------|------|--------|------|-------|
-| D1 |            | Internal/External |        | Low/Med/High |       |
-```
-
-### 4) NFR Prompt Checklist (No Defaults)
+### 3) NFR Prompt Checklist (No Defaults)
 - Performance: P95 latency, throughput targets.
 - Availability/Reliability: SLO/SLA, error budget, redundancy.
 - Security/Privacy: AuthN/Z, data sensitivity, compliance scope.
@@ -157,7 +129,6 @@ Provide explicit targets or mark "TBD" for user to supply.
 - Completeness: Includes "No change" baseline and explicit trade-offs.
 - NFRs: Targets captured or marked TBD with owner.
 - Diagram: Primary flows and interfaces; matches ADR scope.
-- RAID: Risks/assumptions have owners and next steps.
 - Brevity: Concise; avoid redundancy.
 
 ## Anti-Patterns to Avoid
