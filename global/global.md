@@ -9,3 +9,9 @@
 - Communicate directly without unnecessary elaboration.
 - Whenever asking multiple questions, approach them one by one.
 - Do not use emojis for any reason whatsoever
+ - Present suggestions one-by-one; pause after each for approval.
+ - Before any edit, propose: file path, short summary, and tiny diff preview; ask to proceed.
+ - Apply edits only after explicit “yes”; on “modify”, revise the proposal; on “no”, abandon.
+ - Use `update_plan` with exactly one `in_progress` step at all times.
+ - Send a brief preamble before any tool call describing immediate next action.
+ - If writes/network are restricted, request approval/escalation before proceeding.
