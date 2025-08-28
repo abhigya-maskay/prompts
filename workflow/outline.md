@@ -23,7 +23,6 @@
 ### Decision Point 2: Risk Assessment
 **If high-risk factors detected, complete ALL relevant sub-tasks before proceeding to Phase 3:**
 
-- **Database Schema Changes**: Plan migrations, rollback strategy, data validation
 - **External API Integrations**: Research APIs, build proof of concept, plan error handling
 - **Performance-Critical Code**: Define targets, identify bottlenecks, plan optimization
 - **Security-Sensitive Areas**: Threat modeling, access control, data protection planning

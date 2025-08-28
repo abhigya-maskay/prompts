@@ -4,7 +4,7 @@
 Identify and assess technical risks in Phase 2; produce a risk register and confirm gate criteria (Scope, Register, Scoring).
 
 ## Scope
-Technical risks in Phase 2 (Database, Integrations, Performance, Security, Legacy).
+Technical risks in Phase 2 (Integrations, Performance, Security, Legacy).
 
 ## Out of Scope
 - Non-technical risks (business, legal, timeline, budget).
@@ -25,7 +25,6 @@ Technical risks in Phase 2 (Database, Integrations, Performance, Security, Legac
 - Impact: Low = minor rework with negligible schedule impact; Medium = limited scope/schedule impact; High = major rework, significant delay, or critical quality/performance/security degradation.
 
 ## Categories
-- Database: Schema changes, migrations, data integrity, query performance.
 - Integrations: Third-party APIs, authentication, SLAs, version changes, rate limits.
 - Performance: Latency, throughput, resource usage, scalability bottlenecks.
 - Security: Access control, data exposure, secrets management, threat vectors.
@@ -44,7 +43,6 @@ Technical risks in Phase 2 (Database, Integrations, Performance, Security, Legac
 ## Additional Examples
 | Title | Category | Description | Likelihood | Impact | Severity | Status |
 |---|---|---|---|---|---|---|
-| Missing index on hot path | Database | EXPLAIN shows seq scan on orders.created_at; p95 650ms @ 10k qps | High | Medium | High | Assessed |
 | OAuth scope deprecation | Integrations | Provider deprecates offline_access per 2025-01 changelog; refresh may fail | Medium | High | Critical | Mitigation Planned |
 | Cold-start latency spikes | Performance | p95 = 1.2s at 300 rps; autoscale min=0 causing cold starts | High | Medium | High | In Progress |
 | Public S3 policy exposure | Security | Terraform sets public-read on artifacts; access logs show external GETs | High | High | Critical | In Progress |
@@ -65,7 +63,7 @@ Technical risks in Phase 2 (Database, Integrations, Performance, Security, Legac
 - Status flow: New (identified) → Assessed (L/I/S scored) → Mitigation Planned (approach agreed) → In Progress (mitigation underway) → Resolved/Accepted (closed or accepted).
 
 ## Common Anti-Patterns
-- Vague title: "Database risk" → use specific symptom (e.g., "Missing index on orders.created_at hot path")
+- Vague title: "Integration risk" → use specific symptom (e.g., "Third-party rate limit exceeded during bursts")
 - No evidence: Description lacks metric/log/source → add one clue (e.g., p95, log line, changelog)
 - Skips the matrix: Severity set without L/I → score Likelihood + Impact, then compute Severity
 - Bundled risks: Multiple issues in one row → split into separate items
@@ -82,6 +80,6 @@ Technical risks in Phase 2 (Database, Integrations, Performance, Security, Legac
 6) Gate check: verify Scope, Register, Scoring complete.
 
 ## Phase 2 Gate Checklist
-- Scope: All applicable categories assessed (Database, Integrations, Performance, Security, Legacy).
+- Scope: All applicable categories assessed (Integrations, Performance, Security, Legacy).
 - Register: Risk register created; top risks recorded with required fields.
 - Scoring: Likelihood/Impact recorded; Severity computed via the matrix.

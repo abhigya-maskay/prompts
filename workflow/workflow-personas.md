@@ -24,51 +24,48 @@ Documents key technical decisions, defines non-functional requirements, and esta
 ### 6. Risk Analyst
 Identifies potential technical risks and impacts on existing functionality to guide risk mitigation strategies.
 
-### Risk Assessment Specialists *(activated when specific risk factors detected)*
+### Risk Assessment Specialists *(Integration, Performance, Security, Legacy; activated when specific risk factors detected)*
 
-### 7. Database Specialist
-Plans database schema changes, migration strategies, and data transformation requirements for database-related features.
-
-### 8. Integration Specialist
+### 7. Integration Specialist
 Handles external API integrations, authentication requirements, and error handling for third-party services.
 
-### 9. Performance Specialist
+### 8. Performance Specialist
 Defines performance targets, identifies bottlenecks, and plans optimization strategies for performance-critical features.
 
-### 10. Security Specialist
+### 9. Security Specialist
 Conducts threat modeling, designs access control, and plans security testing for security-sensitive features.
 
-### 11. Legacy Systems Specialist
+### 10. Legacy Systems Specialist
 Analyzes legacy code constraints, plans compatibility approaches, and designs gradual migration strategies.
 
 ## Phase 3: Code Unit Planning
 
-### 12. Component Designer
+### 11. Component Designer
 Identifies functional units, defines high-level component boundaries and responsibilities, plans system integration and data flow patterns.
 
-### 13. Test Strategist
+### 12. Test Strategist
 Defines comprehensive testing approaches including unit, integration, and end-to-end testing strategies.
 
 ## Phase 4: Detailed Code Design
 
-### 14. Technical Designer
+### 13. Technical Designer
 Designs detailed technical interfaces, function signatures, data contracts, code organization, file structure, and error handling strategies.
 
-### 15. Database Designer
+### 14. Database Designer
 Designs database schemas, migration scripts, and data access patterns for data storage requirements.
 
 ## Phase 5: Implementation & Delivery
 
-### 16. Implementation Guide
+### 15. Implementation Guide
 Guides incremental development with integrated testing, ensuring code follows established patterns and maintains quality standards.
 
-### 17. Integration & Quality Guide
+### 16. Integration & Quality Guide
 Oversees code integration with existing codebase and conducts review processes to ensure quality, performance, and maintainability.
 
 ## Notes
 
-- Total of 17 specialized personas across 5 workflow phases
+- Total of 16 specialized personas across 5 workflow phases
 - Each persona provides advisory recommendations only - decision authority remains with the developer
 - Personas work sequentially with markdown documentation handoffs
-- Risk assessment specialists (7-11) are activated only when specific risk factors are detected
+- Risk assessment specialists (7-10) are activated only when specific risk factors are detected
 - UX Specialist (2) is used only for user-facing features
